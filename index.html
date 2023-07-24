@@ -17,18 +17,30 @@
     .font-roboto{
         font-family: 'Roboto', sans-serif;
     }
+    .box-shadow{
+        padding:12px;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    }
 </style>
 </head>
 <body>
     <header class="bg-amber-100 py-20 px-4 md:px-32">
         <!-- nav section -->
-        <nav>
-
+        <nav class="py-5 grid grid-cols-1 md:grid-cols2 lg:grid-cols-2 items-center ">
+            <img class="w-3/5 py-3" src="icons/logo.png" alt="">
+            <ul class="flex justify-between gap-x-5 text-sm md:text-lg lg:text-lg font-semibold cursor-pointer">
+                <li>Home</li>
+                <li>Products</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
         </nav>
         <!-- banner section -->
         <div class="flex flex-col md:flex-row justify-between items-center ">
             <div class="space-y-3">
-                <h1 class="text-7xl uppercase font-bebas"> 
+                <h1 class=" text-3xl md:text-7xl lg:text-7xl uppercase font-bebas"> 
                     <span class="text-[#FABE4C]">Be the Penguins</span><br>of Winter</h1>
                     <p class="text-sm">Lorem Ipsum is simply dummy text of the printing 
                         and typesetting industry.</p>
@@ -39,14 +51,14 @@
             </div>
         </div>
     </header>
-    <main class="max-w-7xl mx-auto">
+    <main class="max-w-7xl mx-3 md:mx-3 lg:mx-auto">
         <!-- women jacket section -->
         <section class="py-12">
             <h3 class="text-4xl font-bebas py-12">Women's Jackets</h3>
             <!--Ladies jacekets container -->
             <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto">
                 <!-- jacket 1 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg box-shadow">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-1.png" alt="">
                     </div>
@@ -59,7 +71,7 @@
                         </div>
                 </div>
                 <!-- jacket 2 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg box-shadow">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-2.png" alt="">
                     </div>
@@ -72,7 +84,7 @@
                         </div>
                 </div>
                 <!-- jacket 3 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg box-shadow">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-3.png" alt="">
                     </div>
@@ -92,7 +104,7 @@
             <!--Ladies jacekets container -->
             <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto">
                 <!-- jacket 4 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg box-shadow">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-4.png" alt="">
                     </div>
@@ -105,7 +117,7 @@
                         </div>
                 </div>
                 <!-- jacket 5 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg box-shadow">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-5.png" alt="">
                     </div>
@@ -118,7 +130,7 @@
                         </div>
                 </div>
                 <!-- jacket 6 -->
-                <div class="space-y-3 drop-shadow-lg">
+                <div class="space-y-3 drop-shadow-lg box-shadow">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-6.png" alt="">
                     </div>
@@ -132,9 +144,38 @@
                 </div>
             </div>
         </section>
+        <!-- find the perfect section -->
+        <section class="py-12">
+           <!-- parent div -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center gap-x-14">
+                <!-- Child-1 -->
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+                    <div class="flex justify-left items-center p-5 rounded-3xl box-shadow my-4">
+                       <div><img src="icons/box.png" alt=""></div>
+                        <div><h3 class="text-2xl font-bold">Find the perfect fit</h3>
+                            <p>Everybody is different, which is why we
+                                offer styles for every body.</p></div>
+                    </div>
+                    <div class="flex justify-left items-center p-5 rounded-3xl box-shadow my-4">
+                        <div><img src="icons/house.png" alt=""></div>
+                        <div><h3 class="text-2xl font-bold">Free Exchanges</h3>
+                            <p>One of the many reasons you can shop
+                                with peace of mind.</p></div>
+                    </div>
+                    <div class="flex justify-left items-center p-5 rounded-3xl box-shadow my-4">
+                        <div><img src="icons/question.png" alt=""></div>
+                        <div><h3 class="text-2xl font-bold">Contact Our Seller</h3>
+                            <p>They are here to help you. That's quite 
+                                literally what we pay them for.</p></div>
+                    </div>
+                </div>
+                <!-- child-2 -->
+                <div>
+                    <img class="w-100%" src="images/shopping.png" alt="">
+                </div>
+           </div>
+                            
+        </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
